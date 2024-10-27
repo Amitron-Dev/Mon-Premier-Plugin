@@ -16,24 +16,26 @@ public class PlayerListeners implements Listener {
 		ItemStack it = e.getItem();
 		Block b = e.getClickedBlock();
 		
-		if(it.getType() == Material.LEVER && it.hasItemMeta() && it.getItemMeta().hasDisplayName() && it.getItemMeta().getDisplayName().equals("§dLe Levier Magique")) { // verifié le levier
-			
-			if(!(b.getType() == Material.LEVER)) { // si le block cliqué n'est pas un levier
+		
+		if(!(b.getType() == Material.LEVER)) {
+			if(it.hasItemMeta() && it.getItemMeta().hasDisplayName() && it.getItemMeta().getDisplayName().equals("§dLe Levier Magique")) {
 				
-				if(!(b.getType() == Material.COAL_BLOCK)) { // si le block cliqué est un block de charbon
-					
-					e.setCancelled(true); // annulé l'evenement crée par minecraft
-					p.sendMessage("§cVous devez poser le levier sur un bloc de charbon.");
-					
+				// -> Uniquement poser sur un bloc de charbon
+				
+				if(!(b.getType() == Material.COAL_BLOCK)) {
+					p.sendMessage("§cVous devez le levier uniquement sur un bloc de charbon");
+					e.setCancelled(true);
+				}else {
+					if(b.getType() == Material.COAL_BLOCK) {
+						p.sendMessage("§aBravo !");
+					}
 				}
-			}else { // sinon
-				e.setCancelled(false);
+				
 				
 			}
-			
-			
-			
 		}
+		
+		
 	}
 	
 	
