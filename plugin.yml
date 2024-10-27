@@ -1,6 +1,6 @@
 name: MonPremierPlugin
 author: Amitron
-version: "0.1"
+version: "1.1"
 api: Spigot
 api-version: "1.8.8"
 main: fr.amitron.first.GMain
