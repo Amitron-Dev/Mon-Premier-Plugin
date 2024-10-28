@@ -5,8 +5,6 @@ Ce plugin est un tutoriel representatif de plusieur notion de developpement info
 > [!WARNING]
 > Plugin developpé en 1.8.8
 
-
-
 ## Commandes
 Voici les commandes actuellement présente sur le plugin
 - /players -> renvois le nombre de joueurs connecté au serveur
