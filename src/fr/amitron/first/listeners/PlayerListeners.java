@@ -18,7 +18,7 @@ public class PlayerListeners implements Listener {
 		
 		
 		if(!(b.getType() == Material.LEVER)) {
-			if(it.hasItemMeta() && it.getItemMeta().hasDisplayName() && it.getItemMeta().getDisplayName().equals("§dLe Levier Magique")) {
+			if(it !=null && it.hasItemMeta() && it.getItemMeta().hasDisplayName() && it.getItemMeta().getDisplayName().equals("§dLe Levier Magique")) {
 				
 				// -> Uniquement poser sur un bloc de charbon
 				

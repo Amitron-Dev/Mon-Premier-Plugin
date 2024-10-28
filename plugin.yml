@@ -1,6 +1,6 @@
 name: MonPremierPlugin
 author: Amitron
-version: "1.1"
+version: "2.0"
 api: Spigot
 api-version: "1.8.8"
 main: fr.amitron.first.GMain
@@ -9,3 +9,7 @@ commands:
     description: Affiche le nombre de joueur connectés au serveur.
   lever:
     description: Donne le levier magique.
+  broadcast:
+    description: Envois un message a tout les joueurs du serveur
+  msg:
+    description: Envois un message privé a un joueur cible
