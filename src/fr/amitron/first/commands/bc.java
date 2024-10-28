@@ -13,6 +13,7 @@ public class bc implements CommandExecutor {
 		
 		Player p = (Player) sender;
 		
+		
 		// -> Etape 1 : verifier les arguments
 		// -> Etape 2 : recuperé les arguments et les mettre dans un string builder
 		// -> Etape 3 : Envoyer les differents messages au joueurs.
