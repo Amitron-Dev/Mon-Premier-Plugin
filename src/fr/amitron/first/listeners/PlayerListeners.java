@@ -27,7 +27,7 @@ public class PlayerListeners implements Listener {
 					
 				}
 			}else { // sinon
-				e.setCancelled(false);
+				e.setCancelled(false); // n'annule pas l'evenement
 				
 			}
 			
