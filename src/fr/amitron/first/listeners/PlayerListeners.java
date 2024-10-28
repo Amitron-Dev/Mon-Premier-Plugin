@@ -16,7 +16,7 @@ public class PlayerListeners implements Listener {
 		ItemStack it = e.getItem();
 		Block b = e.getClickedBlock();
 		
-		if(it.getType() == Material.LEVER && it.hasItemMeta() && it.getItemMeta().hasDisplayName() && it.getItemMeta().getDisplayName().equals("§dLe Levier Magique")) { // verifié le levier
+		if(it !=null && it.getType() == Material.LEVER && it.hasItemMeta() && it.getItemMeta().hasDisplayName() && it.getItemMeta().getDisplayName().equals("§dLe Levier Magique")) { // verifié le levier
 			
 			if(!(b.getType() == Material.LEVER)) { // si le block cliqué n'est pas un levier
 				

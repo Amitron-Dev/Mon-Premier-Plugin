@@ -4,7 +4,9 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import fr.amitron.first.commands.Players;
+import fr.amitron.first.commands.bc;
 import fr.amitron.first.commands.lever;
+import fr.amitron.first.commands.msg;
 import fr.amitron.first.listeners.PlayerListeners;
 
 public class GMain extends JavaPlugin {
@@ -19,6 +21,8 @@ public class GMain extends JavaPlugin {
 		}
 		getCommand("players").setExecutor(new Players());
 		getCommand("lever").setExecutor(new lever());
+		getCommand("broadcast").setExecutor(new bc());
+		getCommand("msg").setExecutor(new msg());
 		
 		Bukkit.getServer().getPluginManager().registerEvents(new PlayerListeners(), this);
 	}

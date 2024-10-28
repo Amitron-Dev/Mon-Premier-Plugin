@@ -9,3 +9,9 @@ commands:
     description: Affiche le nombre de joueur connectés au serveur.
   lever:
     description: Donne le levier magique.
+  broadcast:
+    description: Envoie une alert a tout les joueurs du serveur.
+    aliase: bc
+  msg:
+    description: Envois un message privé au joueurs sur le serveur.
+    
